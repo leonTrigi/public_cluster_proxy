@@ -21,3 +21,7 @@ app.post('/nfetch', require('./nfetch.js'));
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+
+const { startCycler } = require('./heartSystem/heart.js');
+startCycler();
