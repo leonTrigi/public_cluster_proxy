@@ -1,3 +1,4 @@
+const envDecrypt = require('../envDecrypt.js');
 const clusterAcolyteToken = process.env.clusterAcolyteToken
 
 module.exports = async (req, res) => { // node fetch gateway

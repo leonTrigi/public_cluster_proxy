@@ -9,14 +9,17 @@ const PORT = process.env.PORT || 3000;
 
 // configs
 const PRODUCTION_PUBLIC_DIRECTORY = path.join(__dirname, './public')
+app.use(require('./reqLogger.js'));
 app.use(express.json());
 app.use(express.static(PRODUCTION_PUBLIC_DIRECTORY));
 
 // routes 
-app.get('/home', (req, res) => { return res.redirect('/index.html'); });
+app.get('/home',   (req, res) => { return res.redirect('/index.html');  });
+app.get('/trafic', (req, res) => { return res.redirect('/trafic.html'); });
 app.get('/uptime', require('./uptime.js'));
 
-app.post('/nfetch', require('./nfetch.js'));
+app.get('/api/logs', require('./routes/api_logs.js') );
+app.post('/nfetch',  require('./routes/nfetch.js')   );
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
