@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
+const serverInfo = require('./serverInfo.js')
 const config = require('./config/default.json');
 const logStream = fs.createWriteStream(path.join(__dirname, config.log.file), { flags: 'a' });
 
@@ -21,6 +22,7 @@ function getIP(req) {
 module.exports = (req, res, next) => {
     const start = Date.now();
     res.on('finish', () => {
+      serverInfo.requestsReceived += 1;
       const duration = Date.now() - start;
       const line = [
           getIP(req),
