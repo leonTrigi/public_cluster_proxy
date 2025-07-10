@@ -16,7 +16,7 @@ app.use(express.static(PRODUCTION_PUBLIC_DIRECTORY));
 // routes 
 app.get('/home',   (req, res) => { return res.redirect('/index.html');  });
 app.get('/trafic', (req, res) => { return res.redirect('/trafic.html'); });
-app.get('/info', require('./info.js'));
+app.get('/info', require('./routes/info.js'));
 
 app.get('/api/logs', require('./routes/api_logs.js') );
 app.post('/nfetch',  require('./routes/nfetch.js')   );
