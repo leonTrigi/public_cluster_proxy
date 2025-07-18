@@ -25,6 +25,10 @@ module.exports = (req, res) => {
       totalMem: os.totalmem(),         // bytes
       freeMem: os.freemem(),           // bytes
       uptime: os.uptime()              // sec
-    }
+    },
+    metrics: {
+      memoryUsage: process.memoryUsage(),
+      cpuUsage: process.cpuUsage(),
+    },
   });
 }

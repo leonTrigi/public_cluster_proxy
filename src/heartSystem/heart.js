@@ -27,13 +27,13 @@ async function _req(urls) {
       stats.success++;
     } else {
       stats.failures++;
-      stats.lastError = `Non-OK status ${res.status}`;
+      stats.lastError = `${url} Non-OK status ${res.status}`;
       console.error(`[HEART] GET ${url} returned status ${res.status}`, i);
     }
   } catch (e) {
     stats.total++;
     stats.failures++;
-    stats.lastError = e.message;
+    stats.lastError = `${url} ${e.message}`;
     console.error(`[HEART] GET ${url} failed:`, i, e.message);
   }
 }

@@ -43,3 +43,9 @@
 70.75.106.98 2025-07-17T14:35:02.383Z GET /info 200 3ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 70.75.106.98 2025-07-17T14:37:13.792Z GET /info 200 2ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 70.75.106.98 2025-07-17T14:37:18.172Z GET /info 200 1ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+70.75.106.98 2025-07-18T05:15:47.893Z GET / 200 5ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+70.75.106.98 2025-07-18T05:15:48.127Z GET /favicon.ico 404 3ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+70.75.106.98 2025-07-18T05:15:50.677Z GET /info 500 2ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+70.75.106.98 2025-07-18T05:15:51.231Z GET /info 500 1ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+70.75.106.98 2025-07-18T05:16:52.091Z GET / 304 3ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+70.75.106.98 2025-07-18T05:16:54.744Z GET /info 200 3ms Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
